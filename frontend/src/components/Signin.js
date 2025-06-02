@@ -15,7 +15,7 @@ function Register() {
     try {
       // Send request to backend to create a new user
       const response = await axios.post(
-        'http://127.0.0.1:8000/api/signup/',
+        'https://budget-tracker-backend-310226327961.asia-south1.run.app/api/signup/',
         { username, password },
         { headers: { Authorization: undefined } } // Explicitly remove Authorization header
       );

@@ -26,6 +26,7 @@ class MonthlyBudgetSerializer(serializers.ModelSerializer):
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
     def get_token(cls, user):
+        print(user)
         token = super().get_token(user)
         return token
 

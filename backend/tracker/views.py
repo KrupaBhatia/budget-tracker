@@ -41,6 +41,7 @@ class CustomTokenObtainPairView(TokenObtainPairView):
 
 
 class SignupView(APIView):
+
     def post(self, request):
         serializer = UserSignupSerializer(data=request.data)
         if serializer.is_valid():

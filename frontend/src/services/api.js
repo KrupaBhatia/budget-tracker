@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:8000/api', // your API base URL
+  baseURL: 'https://budget-tracker-backend-310226327961.asia-south1.run.app/api', // your API base URL
 });
 
 API.interceptors.request.use(
