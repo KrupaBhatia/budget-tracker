@@ -15,7 +15,7 @@ const Login = () => {
 
     try {
       // Send request to the backend for token
-      const response = await axios.post('http://127.0.0.1:8000/api/token/', {
+      const response = await axios.post('https://budget-tracker-backend-310226327961.asia-south1.run.app/api/token/', {
         username,
         password,
       });
@@ -32,7 +32,7 @@ const Login = () => {
       navigate('/dashboard');
     } catch (err) {
       console.error(err);
-      setError('Invalid credentials. Please try again.'); 
+      setError('Invalid credentials. Please try again.');
     }
   };
 
